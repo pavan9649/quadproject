@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/src/tb.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <title>Blood-Doner-Data</title>
+      <style>
+          th{ 
+        color:#fff;
+            }
+      </style>
+</head>
+<body>
+    <div class="navabr">
+        <div id="main">HODLINFO</div>
+         <h4>.com</h4>
+         <select id="value" name="value">
+            <option value="INR">INR</option>
+           
+              </select>
+        <select id="value1" name="value1">
+                <option value="BTC">BTC</option>
+                <option value="ETH">ETH</option>
+                <option value="USDT">USDT</option>
+                <option value="XRP">XRP</option>
+                <option value="TRX">TRX</option>
+                <option value="DASH">DASH</option>
+                <option value="ZEC">ZEC</option>
+                <option value="XEM">XEM</option>
+                <option value="LOST">LOST</option>
+                <option value="WIN">WIN</option>
+                <option value="BTT">BTT</option>
+                <option value="WRT">WRT</option>
+
+               
+                  </select>
+        <a  href="https://wazirx.com/invite/sp7pvbt6?utm_source=finstreet&utm_medium=affiliate&utm_campaign=regnow-btn">BUY BTC</a>
+        
+        <div id=tele>💨Connect Telegram</div>
+         <div id="check">Powered By <div id="spec"> Finstreet</div></div>
+
+    </div>
+    <table class="table table-striped">
+        <thead>
+        <tr  class="bg-info">
+            <th>#</th>
+            <th>name</th>
+           <th>last</th>
+            <th>Buy/Sell Price</th>
+            <th>volume</th>
+            <th>base_unit</th>
+            
+        </tr>
+    </thead>
+    <% records.forEach(function(row){ %>
+        <tr>
+            <td><%= row.id %></td>
+            <td><%=row.name%></td>
+            <td>₹ <%= row.last %></td>
+            <td>₹ <%= row.Buy %> / ₹ <%=row.Sell%></td>
+            <td><%= row.Volume %></td>
+            <td><%=row.base_unit %></td>
+            
+        </tr>
+        <%}) %>
+              
+    </table>
+    </body>
+    
+</html>

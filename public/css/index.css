@@ -1,0 +1,45 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+
+}
+.navbar{
+    display: flexbox;
+}
+#main{
+    display: inline;
+    color: aqua;
+    font-size: 50px;
+    margin-left: 40px;
+}
+#value{
+    margin-left: 200px;
+}
+#value1{
+    margin-right: 50px;
+}
+#buy{
+    border: 2px solid,brown;
+}
+
+#check{
+    
+    margin-left: 50px;
+}
+#spec{
+    display: inline;
+    color: rgb(178, 201, 201);
+    font-weight: bold;
+}
+h4{
+    display: inline
+       
+}
+#tele{
+    display: inline;
+    margin-left: 150px;
+}
